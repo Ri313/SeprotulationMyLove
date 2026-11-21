@@ -19,11 +19,11 @@ const CONFIG = {
   ],
   // Taruh foto di folder assets/photos/ lalu sesuaikan nama file & caption
   photos: [
-    { src: "assets/photos/1.jpg", cap: "Our favorite day" },
-    { src: "assets/photos/2.jpg", cap: "Just us" },
-    { src: "assets/photos/3.jpg", cap: "Always smiling" },
-    { src: "assets/photos/4.jpg", cap: "Best company" },
-    { src: "assets/photos/5.jpg", cap: "My happy place" },
+    { src: "assets/photos/1.jpg", cap: "My Love Sempro" },
+    { src: "assets/photos/2.jpg", cap: "One Step Closer Become Doctor" },
+    { src: "assets/photos/3.jpg", cap: "Always smiling & Beautiful" },
+    { src: "assets/photos/4.jpg", cap: "My Love Wifey" },
+    { src: "assets/photos/5.jpg", cap: "My Love Win Championship" },
     { src: "assets/photos/6.jpg", cap: "To many more" }
   ],
   // Surat: ganti sesuai cerita kalian. Ini hanya contoh awal.
