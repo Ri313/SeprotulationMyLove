@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Dearest Aulia ♡</title>
+  <meta name="theme-color" content="#F3DDE2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+  <canvas id="confetti"></canvas>
+  <div class="grain"></div>
+
+  <!-- 01. WELCOME -->
+  <section id="welcome">
+    <div class="floaties" aria-hidden="true"></div>
+    <div class="welcome-inner">
+      <div class="bloom" aria-hidden="true">
+        <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span>
+        <span class="petal p4"></span><span class="petal p5"></span><span class="core"></span>
+      </div>
+      <p class="eyebrow">For My Dearest Aulia</p>
+      <h1>Hey, Sayang.<br /><em>I made something special just for you.</em></h1>
+      <button id="openBtn" class="btn">Open Your Surprise ♡</button>
+      <p class="tiny">A little website, made with a lot of love.</p>
+    </div>
+  </section>
+
+  <button id="musicBtn" class="music" aria-label="Putar / jeda musik" hidden>♪</button>
+  <nav id="progress" class="progress" aria-label="Progress" hidden></nav>
+
+  <main id="main" hidden>
+
+    <!-- 02. BIG ANNOUNCEMENT -->
+    <section id="announce" class="screen center" data-title="Announcement">
+      <div class="floaties" aria-hidden="true"></div>
+      <p class="eyebrow reveal">The Big Announcement</p>
+      <h2 class="huge reveal d1">SHE DID IT!</h2>
+      <p class="lead reveal d2">Congratulations on Your Seminar Proposal, <em>Aulia!</em></p>
+      <button class="btn ghost reveal d3" id="boomBtn">Celebrate again ✦</button>
+      <p class="scroll-hint reveal d4">scroll ↓</p>
+    </section>
+
+    <!-- 03. HER JOURNEY -->
+    <section id="journey" class="screen" data-title="Journey">
+      <p class="eyebrow reveal">Her Journey</p>
+      <h2 class="reveal d1">I know it wasn't always easy,<br /><em>but you made it.</em></h2>
+      <p class="hint reveal d2">Tap each milestone to open a little message ♡</p>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- EXTRA. REASONS -->
+    <section id="reasons" class="screen" data-title="Reasons">
+      <p class="eyebrow reveal">The Reasons I'm Proud of You</p>
+      <h2 class="reveal d1">Open them <em>one by one</em></h2>
+      <div class="cards" id="cards"></div>
+      <p class="counter reveal">Reasons found: <b id="reasonCount">0</b> / 5</p>
+    </section>
+
+    <!-- 04. MEMORIES -->
+    <section id="memories" class="screen" data-title="Memories">
+      <p class="eyebrow reveal">Our Little Memories</p>
+      <h2 class="reveal d1">Some of my favorite moments<br />are the ones <em>with you.</em></h2>
+      <div class="polaroids" id="polaroids"></div>
+    </section>
+
+    <!-- 05. LETTER -->
+    <section id="letter" class="screen center" data-title="Letter">
+      <p class="eyebrow reveal">A Letter for You</p>
+      <div class="envelope reveal d1" id="envelope">
+        <div class="env-back"></div>
+        <div class="paper" id="paper"><div id="letterText"></div></div>
+        <div class="env-front"></div>
+        <div class="flap"></div>
+        <span class="seal">♡</span>
+      </div>
+      <button id="readBtn" class="btn reveal d2">Read My Letter</button>
+    </section>
+
+    <!-- 06. QUIZ -->
+    <section id="quiz" class="screen center" data-title="Quiz">
+      <p class="eyebrow reveal">A Little Love Quiz</p>
+      <div class="quiz-card reveal d1" id="quizCard"></div>
+    </section>
+
+    <!-- 07. FINAL -->
+    <section id="final" class="screen center" data-title="Final">
+      <div class="heart-field" id="heartField" aria-hidden="true"></div>
+      <p class="eyebrow reveal">The Final Surprise</p>
+      <div id="finalLocked" class="locked-msg reveal d1">
+        <p>Finish the little quiz first to unlock this ♡</p>
+      </div>
+      <div id="finalContent" hidden>
+        <h2 class="big-final">One achievement down,<br /><em>many beautiful dreams to go.</em></h2>
+        <p class="final-msg" id="finalMsg">Whatever comes next, remember that you never have to face it alone. I'll always be cheering for you, Sayang.</p>
+        <button id="replayBtn" class="btn">Replay Our Little Celebration ♡</button>
+      </div>
+    </section>
+
+    <footer>Made with love, for Aulia ♡</footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lb-inner"><div id="lbImg"></div><p id="lbCap"></p></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
